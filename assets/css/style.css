@@ -3,7 +3,7 @@
    * COLORS
    */
 
-  --blue-crayola: hsl(244, 33%, 16%);
+  --blue-crayola: hsl(244, 69%, 54%);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
   --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -202,6 +202,89 @@ body.nav-active {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--blue-crayola);
+}
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+.display-1,
+.headline-1,
+.headline-2,
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  color: var(--white);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-2);
+}
+
+.display-1 {
+  font-size: var(--fontSize-display-1);
+  line-height: var(--lineHeight-1);
+}
+
+.headline-1 {
+  font-size: var(--fontSize-headline-1);
+}
+
+.headline-2 {
+  font-size: var(--fontSize-headline-2);
+}
+
+.headline-2 {
+  font-size: var(--fontSize-headline-2);
+  line-height: var(--lineHeight-2);
+}
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+  padding-inline: 16px;
+}
+.separator {
+  width: 8px;
+  height: 8px;
+  border: thin solid var(--blue-crayola);
+  transform: rotate(45deg);
+}
+
+.contact-label {
+  font-weight: var(--weight-bold);
+}
+
+.contact-number {
+  color: var(--blue-crayola);
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.hover-underline {
+  position: relative;
+  max-width: max-content;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  border-block: 1px solid var(--blue-crayola);
+  transform: scaleX(0.2);
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
+.hover-underline:is(:hover, :focus-visible)::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.contact-number::after {
+  bottom: -5px;
 }
 
 /*-----------------------------------*\
