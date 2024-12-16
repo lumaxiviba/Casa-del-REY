@@ -282,6 +282,8 @@ body.nav-active {
 
 .container {
   padding-inline: 16px;
+  /* . */
+  padding: 0 20px;
 }
 .separator {
   width: 8px;
@@ -325,6 +327,10 @@ body.nav-active {
 
 .contact-number::after {
   bottom: -5px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*-----------------------------------*\
@@ -426,6 +432,10 @@ body.nav-active {
   z-index: 4;
   border-block-end: thin solid transparent;
   transition: var(--transition-1);
+  /* . */
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos a los extremos */
+  align-items: center;
 }
 
 .header.active {
@@ -449,7 +459,13 @@ body.nav-active {
 
 .nav-open-btn {
   padding: 12px;
-  padding-inline-end: 0;
+  padding-inline-end: 10px;
+  /* . */
+  position: absolute; /* o relative si lo necesitas */
+  top: 0; /* Ajusta según sea necesario */
+  right: 0; /* Alinea a la derecha */
+  margin: 10px; /* Asegura un espacio adecuado */
+  margin-top: 60px;
 }
 
 .nav-open-btn .line {
@@ -546,4 +562,55 @@ body.nav-active {
 
 .navbar-link .span {
   transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+  color: var(--blue-crayola);
+  transform: translateX(20px);
+}
+
+.navbar-link .separator {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-60%) rotate(45deg);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator {
+  opacity: 1;
+}
+
+.navbar-title {
+  margin-block-end: 15px;
+}
+
+.navbar-text {
+  margin-block: 10px;
+}
+
+.sidebar-link {
+  transition: var(--transition-1);
+}
+
+.navbar .body-4 {
+  color: var(--quick-silver);
+}
+
+.siderbar-link:is(:hover, :focus-visible) {
+  color: var(--blue-crayola);
+}
+
+.navbar .text-center .separator {
+  margin-block: 30px;
+  margin-inline: auto;
+}
+
+.navbar .contact-label {
+  margin-block-end: 10px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: var(--white-alpha-10);
 }
