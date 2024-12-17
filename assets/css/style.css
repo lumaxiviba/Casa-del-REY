@@ -282,8 +282,6 @@ body.nav-active {
 
 .container {
   padding-inline: 16px;
-  /* . */
-  padding: 0 20px;
 }
 .separator {
   width: 8px;
@@ -465,7 +463,7 @@ body.nav-active {
   top: 0; /* Ajusta según sea necesario */
   right: 0; /* Alinea a la derecha */
   margin: 10px; /* Asegura un espacio adecuado */
-  margin-top: 60px;
+  margin-top: 35px;
 }
 
 .nav-open-btn .line {
@@ -613,4 +611,22 @@ body.nav-active {
 
 .navbar::-webkit-scrollbar-thumb {
   background-color: var(--white-alpha-10);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--black-alpha-80);
+  opacity: 0;
+  pointer-events: none;
+  transform: var(--transition-2);
+  z-index: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
