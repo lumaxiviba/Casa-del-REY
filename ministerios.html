@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Casa del REY - Ministerios</title>
+    <meta name="title" content="Casa del REY - Iglesia" />
+    <meta
+      name="description"
+      content="Conoce la Iglesia Casa del Rey, un lugar de fe y comunidad donde encontrarás información sobre nuestros ministerios, actividades y valores espirituales. ¡Te invitamos a ser parte de nuestra familia!"
+    />
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS Link  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div class="preload" data-preload>
+      <div class="circle"></div>
+      <p class="text">Casa del REY</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+    -->
+
+    <div class="topbar">
+      <div class="container">
+        <adress class="topbar-item">
+          <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+
+          <span class="span"
+            >Jr. Mariscal Gamarra N° 348 Urb. La Florida, Huancayo, Peru
+          </span>
+        </adress>
+        <div class="separator"></div>
+        <div class="topbar-item item-2">
+          <div class="icon"><ion-icon name="time-outline"></ion-icon></div>
+          <span class="span">Siempre abierto </span>
+        </div>
+        <a href="tel:+51934102200" class="topbar-item link">
+          <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+          <span class="span">+51 934 102 200</span>
+        </a>
+        <div class="separator"></div>
+        <a
+          href="https://www.facebook.com/casadelreyhyo"
+          target="_blank"
+          class="topbar-item"
+        >
+          <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
+          <span class="span">Facebook</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - # HEADER
+    -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="70"
+            height="70"
+            alt="Casa del REY - Home"
+          />
+        </a>
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <a href="index.html" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="100"
+              height="100"
+              alt="Casa del REY - Home"
+            />
+          </a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Inicio</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="ministerios.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Ministerios</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="nosotros.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Sobre Nosotros</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="contacto.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Contáctanos</span>
+              </a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visítanos</p>
+            <adress class="body-4">
+              Jr. Mariscal Gamarra N° 348 Urb. La Florida,<br />
+              Huancayo, Peru
+            </adress>
+            <p class="body-4 navbar-text">Abierto: Siempre</p>
+            <a
+              href="https://www.facebook.com/casadelreyhyo"
+              target="_blank"
+              class="body-4 siderbar-link"
+              >Facebook</a
+            >
+            <div class="separator"></div>
+            <p class="contact-label">Te Atenderemos</p>
+            <a
+              href="tel:+51934102200"
+              class="body-1 contact-number hover-underline"
+              >+51-934-102-200
+            </a>
+          </div>
+        </nav>
+        <a href="contacto.html" class="btn btn-secondary">
+          <span class="text text-1">Encuentro con Cristo</span>
+          <span class="text text-2" aria-hidden="true"
+            >Encuentro con Cristo</span
+          >
+        </a>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span><span class="line line-2"></span
+          ><span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <!-- MINISTERIOS -->
+    <br />
+    <br />
+    <section id="ministries" class="section text-center">
+      <div class="container">
+        <p class="label-2 section-subtitle">Ministerios</p>
+        <h2 class="headline-1 section-title">Nuestros Ministerios</h2>
+        <p class="section-text">
+          Descubre cómo servimos a nuestra comunidad a través de diferentes
+          ministerios diseñados para todas las edades y necesidades.
+        </p>
+        <br /><br />
+        <!-- Ministerio de Jóvenes -->
+        <div
+          class="grid-list"
+          id="jovenes"
+          style="display: flex; align-items: center; margin-bottom: 40px"
+        >
+          <figure
+            class="card-banner img-holder"
+            style="--width: 285; --height: 336; flex: 1"
+          >
+            <img
+              src="./assets/images/service-1.jpeg"
+              alt="Ministerio de Jóvenes"
+              class="img-cover"
+            />
+          </figure>
+          <div class="card-content" style="flex: 1; padding: 20px">
+            <h3 class="title-4 card-title">Ministerio de Jóvenes</h3>
+            <p class="body-4">
+              <b>"Fortaleciendo corazones jóvenes para un propósito eterno."</b>
+              <br />
+              <br />
+              El Ministerio de Jóvenes de Casa del Rey es un espacio diseñado
+              para guiar a los jóvenes hacia una relación más profunda con Dios,
+              ayudándolos a descubrir su propósito en Cristo. Aquí, cultivamos
+              valores como la fe, el servicio y la comunión, ofreciendo
+              actividades dinámicas y relevantes que inspiran crecimiento
+              espiritual y personal.
+              <br /><br />
+              En el Ministerio de Jóvenes, creemos que cada joven tiene un
+              llamado especial de parte de Dios. Nuestra misión es empoderarlos
+              para que vivan una vida llena de propósito, siendo luz en su
+              entorno y reflejando el amor de Cristo en todo lo que hacen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ministerio de Mujeres -->
+        <div
+          class="grid-list"
+          id="mujeres"
+          style="
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-direction: row-reverse;
+          "
+        >
+          <figure
+            class="card-banner img-holder"
+            style="--width: 285; --height: 336; flex: 1"
+          >
+            <img
+              src="./assets/images/service-2.jpg"
+              alt="Ministerio de Mujeres"
+              class="img-cover"
+            />
+          </figure>
+          <div class="card-content" style="flex: 1; padding: 20px">
+            <h3 class="title-4 card-title">Ministerio de Mujeres</h3>
+            <p class="body-4">
+              <b>"Mujeres valientes, transformadas por el amor de Dios."</b>
+              <br />
+              <br />
+              El Ministerio de Mujeres de Casa del Rey es un lugar especial
+              donde las mujeres pueden encontrar apoyo, inspiración y
+              crecimiento en su fe. Este ministerio está diseñado para empoderar
+              a las mujeres en su caminar con Cristo, ayudándolas a descubrir su
+              identidad y propósito divino.
+              <br /><br />
+              A través de encuentros significativos, construimos relaciones
+              sólidas y brindamos un espacio seguro para compartir experiencias,
+              aprender juntas y crecer espiritualmente.
+              <br /><br />
+              Creemos que cada mujer es una creación única de Dios, llamada a
+              impactar su hogar, comunidad y más allá con el amor y la gracia de
+              Cristo.
+              <br /><br />
+
+              En el Ministerio de Mujeres, caminamos juntas, celebrando las
+              victorias y aprendiendo de los desafíos, mientras nos apoyamos
+              mutuamente en nuestro viaje de fe.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ministerio de Niños -->
+        <div
+          id="ninos"
+          class="grid-list"
+          style="display: flex; align-items: center; margin-bottom: 40px"
+        >
+          <figure
+            class="card-banner img-holder"
+            style="--width: 285; --height: 336; flex: 1"
+          >
+            <img
+              src="./assets/images/service-3.png"
+              alt="Ministerio de Niños"
+              class="img-cover"
+            />
+          </figure>
+          <div class="card-content" style="flex: 1; padding: 20px">
+            <h3 class="title-4 card-title">Ministerio de Niños</h3>
+            <p class="body-4">
+              <b>"Sembrando fe en los corazones más pequeños."</b>
+              <br />
+              <br />
+              El Ministerio de Niños de Casa del Rey es un espacio lleno de
+              amor, alegría y enseñanza, diseñado especialmente para los más
+              pequeños. Nuestro objetivo es guiarlos a conocer a Jesús,
+              construir una fe firme y descubrir que son amados y valorados por
+              Dios.
+              <br /><br />
+              En un ambiente seguro y estimulante, los niños tienen la
+              oportunidad de aprender principios bíblicos a través de
+              actividades dinámicas, juegos y lecciones adaptadas a su edad.
+
+              <br /><br />
+              Creemos que los niños son un regalo de Dios y que su infancia es
+              el momento perfecto para sembrar semillas de fe. Nuestro
+              compromiso es ayudarles a crecer como seguidores de Cristo,
+              confiados en Su amor y promesas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+          - FOOTER
+        -->
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url(./assets/images/footer-bg.png)"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="70"
+                height="70"
+                loading="lazy"
+                alt="Casa delRey"
+              />
+            </a>
+            <address class="body-4">
+              Jr. Mariscal Gamarra N° 348 Urb. La Florida, Huancayo, Perú
+            </address>
+            <a href="tel:+51934102200" class="body-4 contact-link"
+              >Te atenderemos: ++51-934-102-200</a
+            >
+            <p class="body-4">Abierto: Siempre</p>
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+            <p class="title-1"></p>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a href="index.html" class="label-2 footer-link hover-underline"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="ministerios.html"
+                class="label-2 footer-link hover-underline"
+                >Ministerios</a
+              >
+            </li>
+            <li>
+              <a
+                href="nosotros.html"
+                class="label-2 footer-link hover-underline"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                href="contacto.html"
+                class="label-2 footer-link hover-underline"
+                >Contáctanos</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <a
+                href="https://www.facebook.com/casadelreyhyo"
+                target="_blank"
+                class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/bjnfTQpCzJjc2vdQA"
+                class="label-2 footer-link hover-underline"
+                >Google Maps</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2025 Casa del Rey. Todos los derechos son reservados | Hecho
+            por
+            <a href="https://github.com/lumaxiviba" target="_blank" class="link"
+              >Lucciano Máximo</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+      - # BACK TO TOP
+    -->
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+    <!-- Custom JS Link -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Ionicon Links  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
